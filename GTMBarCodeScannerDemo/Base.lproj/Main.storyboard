@@ -1,24 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="79B-gY-VtQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="tQi-08-9Kk">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="79B-gY-VtQ" customClass="ViewController" customModule="GTMBarCodeScannerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WIf-tG-eTD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1LM-fU-W69">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="107.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scanner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1W8-Yo-rF4">
+                                        <rect key="frame" x="170" y="64" width="74.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="35"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJx-pE-K17">
+                                        <rect key="frame" x="5" y="65" width="50" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="kOs-44-EoV"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="chevron.backward" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <constraints>
+                                    <constraint firstItem="CJx-pE-K17" firstAttribute="leading" secondItem="1LM-fU-W69" secondAttribute="leading" constant="5" id="HT6-X3-d6p"/>
+                                    <constraint firstItem="CJx-pE-K17" firstAttribute="centerY" secondItem="1W8-Yo-rF4" secondAttribute="centerY" id="Nbd-fp-hHr"/>
+                                    <constraint firstAttribute="bottom" secondItem="1W8-Yo-rF4" secondAttribute="bottom" constant="20" id="Tzx-HO-pf0"/>
+                                    <constraint firstItem="1W8-Yo-rF4" firstAttribute="centerX" secondItem="1LM-fU-W69" secondAttribute="centerX" id="zQQ-9e-NQp"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPc-q1-8V5" customClass="PositionableButton" customModule="GTMBarCodeScannerDemo" customModuleProvider="target">
+                                <rect key="frame" x="166" y="682" width="82" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Lfc-5J-sRS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Flash Off" image="flash_off"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="position">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="splitSpace">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="positionImage" value="flash_off"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onFlashLight:" destination="79B-gY-VtQ" eventType="touchUpInside" id="DAB-sa-RU8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m11-xP-ycS"/>
+                        <constraints>
+                            <constraint firstItem="1LM-fU-W69" firstAttribute="leading" secondItem="m11-xP-ycS" secondAttribute="leading" id="1ag-u2-2hu"/>
+                            <constraint firstItem="m11-xP-ycS" firstAttribute="bottom" secondItem="OPc-q1-8V5" secondAttribute="bottom" constant="100" id="NDI-Kc-Kor"/>
+                            <constraint firstItem="OPc-q1-8V5" firstAttribute="centerX" secondItem="m11-xP-ycS" secondAttribute="centerX" id="TCU-BH-utY"/>
+                            <constraint firstItem="1LM-fU-W69" firstAttribute="top" secondItem="WIf-tG-eTD" secondAttribute="top" id="WRJ-Hy-WZG"/>
+                            <constraint firstItem="1W8-Yo-rF4" firstAttribute="top" secondItem="m11-xP-ycS" secondAttribute="top" constant="20" id="xfv-Wb-Wgs"/>
+                            <constraint firstAttribute="trailing" secondItem="1LM-fU-W69" secondAttribute="trailing" id="xvv-OD-YNl"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flashLightButton" destination="OPc-q1-8V5" id="7nn-o5-Wte"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3tK-KV-VQt" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="30" y="47"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="OPc-q1-8V5">
+            <size key="intrinsicContentSize" width="82" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="flash_off" width="30" height="30"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

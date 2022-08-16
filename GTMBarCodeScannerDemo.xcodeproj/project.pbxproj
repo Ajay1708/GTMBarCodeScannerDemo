@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29E82E0A6A0F44BEBB52EBAC /* Pods_GTMBarCodeScannerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20579B8ED21A9313DAF6EE4E /* Pods_GTMBarCodeScannerDemo.framework */; };
 		687CFE2428ABBC780024DCCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CFE2328ABBC780024DCCD /* AppDelegate.swift */; };
 		687CFE2628ABBC780024DCCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CFE2528ABBC780024DCCD /* SceneDelegate.swift */; };
 		687CFE2828ABBC780024DCCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CFE2728ABBC780024DCCD /* ViewController.swift */; };
 		687CFE2B28ABBC780024DCCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687CFE2928ABBC780024DCCD /* Main.storyboard */; };
 		687CFE2D28ABBC790024DCCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687CFE2C28ABBC790024DCCD /* Assets.xcassets */; };
 		687CFE3028ABBC790024DCCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687CFE2E28ABBC790024DCCD /* LaunchScreen.storyboard */; };
+		687CFE3C28ABBCCB0024DCCD /* VoiceSearchOn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 687CFE3B28ABBCCB0024DCCD /* VoiceSearchOn.wav */; };
+		687CFE3F28ABBD630024DCCD /* PositionableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CFE3E28ABBD630024DCCD /* PositionableButton.swift */; };
+		687CFE4128ABBDC70024DCCD /* UIButton + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CFE4028ABBDC70024DCCD /* UIButton + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20579B8ED21A9313DAF6EE4E /* Pods_GTMBarCodeScannerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTMBarCodeScannerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF368EFAF7EDCF1F3120122 /* Pods-GTMBarCodeScannerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTMBarCodeScannerDemo.release.xcconfig"; path = "Target Support Files/Pods-GTMBarCodeScannerDemo/Pods-GTMBarCodeScannerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		687CFE2028ABBC780024DCCD /* GTMBarCodeScannerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTMBarCodeScannerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		687CFE2328ABBC780024DCCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		687CFE2528ABBC780024DCCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		687CFE2C28ABBC790024DCCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		687CFE2F28ABBC790024DCCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		687CFE3128ABBC790024DCCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		687CFE3B28ABBCCB0024DCCD /* VoiceSearchOn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = VoiceSearchOn.wav; sourceTree = "<group>"; };
+		687CFE3E28ABBD630024DCCD /* PositionableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionableButton.swift; sourceTree = "<group>"; };
+		687CFE4028ABBDC70024DCCD /* UIButton + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extensions.swift"; sourceTree = "<group>"; };
+		A60EDBFB8BCC87E18288E3BA /* Pods-GTMBarCodeScannerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTMBarCodeScannerDemo.debug.xcconfig"; path = "Target Support Files/Pods-GTMBarCodeScannerDemo/Pods-GTMBarCodeScannerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E82E0A6A0F44BEBB52EBAC /* Pods_GTMBarCodeScannerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CE69A8AFEF26B8BA44D2EE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A60EDBFB8BCC87E18288E3BA /* Pods-GTMBarCodeScannerDemo.debug.xcconfig */,
+				4FF368EFAF7EDCF1F3120122 /* Pods-GTMBarCodeScannerDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		687CFE1728ABBC780024DCCD = {
 			isa = PBXGroup;
 			children = (
 				687CFE2228ABBC780024DCCD /* GTMBarCodeScannerDemo */,
 				687CFE2128ABBC780024DCCD /* Products */,
+				0CE69A8AFEF26B8BA44D2EE1 /* Pods */,
+				EE03483BEAA47D620AA3B517 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +78,8 @@
 		687CFE2228ABBC780024DCCD /* GTMBarCodeScannerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				687CFE3D28ABBD530024DCCD /* Extensions */,
+				687CFE3A28ABBCBD0024DCCD /* Resources */,
 				687CFE2328ABBC780024DCCD /* AppDelegate.swift */,
 				687CFE2528ABBC780024DCCD /* SceneDelegate.swift */,
 				687CFE2728ABBC780024DCCD /* ViewController.swift */,
@@ -67,6 +91,31 @@
 			path = GTMBarCodeScannerDemo;
 			sourceTree = "<group>";
 		};
+		687CFE3A28ABBCBD0024DCCD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				687CFE3B28ABBCCB0024DCCD /* VoiceSearchOn.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		687CFE3D28ABBD530024DCCD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				687CFE3E28ABBD630024DCCD /* PositionableButton.swift */,
+				687CFE4028ABBDC70024DCCD /* UIButton + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE03483BEAA47D620AA3B517 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20579B8ED21A9313DAF6EE4E /* Pods_GTMBarCodeScannerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 687CFE3428ABBC790024DCCD /* Build configuration list for PBXNativeTarget "GTMBarCodeScannerDemo" */;
 			buildPhases = (
+				6F7B76CD60A06CEF3C4E2EF3 /* [CP] Check Pods Manifest.lock */,
 				687CFE1C28ABBC780024DCCD /* Sources */,
 				687CFE1D28ABBC780024DCCD /* Frameworks */,
 				687CFE1E28ABBC780024DCCD /* Resources */,
+				83DA7FE97EEAD73F02E71FC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,20 +178,65 @@
 			files = (
 				687CFE3028ABBC790024DCCD /* LaunchScreen.storyboard in Resources */,
 				687CFE2D28ABBC790024DCCD /* Assets.xcassets in Resources */,
+				687CFE3C28ABBCCB0024DCCD /* VoiceSearchOn.wav in Resources */,
 				687CFE2B28ABBC780024DCCD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6F7B76CD60A06CEF3C4E2EF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GTMBarCodeScannerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83DA7FE97EEAD73F02E71FC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GTMBarCodeScannerDemo/Pods-GTMBarCodeScannerDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GTMBarCodeScannerDemo/Pods-GTMBarCodeScannerDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GTMBarCodeScannerDemo/Pods-GTMBarCodeScannerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		687CFE1C28ABBC780024DCCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				687CFE3F28ABBD630024DCCD /* PositionableButton.swift in Sources */,
 				687CFE2828ABBC780024DCCD /* ViewController.swift in Sources */,
 				687CFE2428ABBC780024DCCD /* AppDelegate.swift in Sources */,
 				687CFE2628ABBC780024DCCD /* SceneDelegate.swift in Sources */,
+				687CFE4128ABBDC70024DCCD /* UIButton + Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +378,13 @@
 		};
 		687CFE3528ABBC790024DCCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A60EDBFB8BCC87E18288E3BA /* Pods-GTMBarCodeScannerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WMH7D578F4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GTMBarCodeScannerDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -299,7 +397,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.GTMBarCodeScannerDemo.GTMBarCodeScannerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maara;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -309,11 +407,13 @@
 		};
 		687CFE3628ABBC790024DCCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FF368EFAF7EDCF1F3120122 /* Pods-GTMBarCodeScannerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WMH7D578F4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GTMBarCodeScannerDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -326,7 +426,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.GTMBarCodeScannerDemo.GTMBarCodeScannerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maara;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

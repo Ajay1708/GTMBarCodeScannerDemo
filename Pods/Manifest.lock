@@ -1,0 +1,16 @@
+PODS:
+  - GTMBarcodeScanner (1.1)
+
+DEPENDENCIES:
+  - GTMBarcodeScanner
+
+SPEC REPOS:
+  trunk:
+    - GTMBarcodeScanner
+
+SPEC CHECKSUMS:
+  GTMBarcodeScanner: ea2eb45f81e99d6344c8108acf348a4ce2e06742
+
+PODFILE CHECKSUM: ed047f62074ee666d2335ae127bc0b41ee745b7b
+
+COCOAPODS: 1.11.3
